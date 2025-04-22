@@ -2,7 +2,6 @@ import pandas as pd
 import torch
 import numpy as np
 from preprocessing import split_sequence
-from soft_dtw_cuda import SoftDTW
 from reconstruction import reconstruct
 import pickle
 import json
@@ -90,10 +89,7 @@ for id, id_df in temp:
     Isanom = Anom_X.sum(axis=1)
     id_out["labels"] = Isanom
     # reconstruct & errors
-    if use_dtw:
-        criterion = SoftDTW(use_cuda=True, gamma=0.1)
-    else:
-        criterion = torch.nn.MSELoss()
+    criterion = torch.nn.MSELoss()
 
     logger.info(X.shape)
     if eval_mode:

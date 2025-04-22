@@ -18,27 +18,6 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def impute_nulls(data):
-    """
-    Mean for all the buildings is used for imputing (This could be improved later).
-    Parameter
-    ---------
-      data: pandas dataframe
-       A dataset containing columns: ['building_id','meter_reading'].
-    Returns
-    --------
-      data: pandas dataframe
-        A dataframe with missing meter readings imputed.
-    """
-    mean_reading = data.groupby('building_id').mean()['meter_reading']
-    building_id = mean_reading.index
-    values = mean_reading.values
-
-    for i, idx in enumerate(building_id):
-        data[data['building_id'] == idx] = data[data['building_id'] == idx].fillna(values[i])
-    return data
-
-
 def preprocess_data(data, dropna=True):
     """
     Preprocessing the input dataframe. By default dropping missing value is used.

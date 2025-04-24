@@ -1,5 +1,8 @@
-# gan-for-energy-anomaly-detection
+# GANs for Anomaly Detection in Energy Time Series Data
 Code repository for the paper Generative Adversarial Networks for Unsupervised Anomaly Detection in Energy Time series data which was accepted at ICLR 2025 Workshop: Tackling Climate Change with Machine Learning
+
+## Abstract
+The growing energy consumption in buildings, which accounts for a significant portion of global energy use, highlights the need for efficient energy management solutions. Smart metering systems have facilitated the collection of vast amounts of energy time-series data, offering valuable insights into consumption patterns. However, anomalies in this data, resulting from issues such as faulty hardware or improper operational practices, can lead to significant energy wastage. This study investigates the use of deep learning models, specifically Generative Adversarial Networks (GANs), for unsupervised anomaly detection in energy time-series data. Specifically, we employ a 1D Deep Convolutional GAN (DCGAN) to model normal consumption patterns and detect anomalies by leveraging the reconstruction error. Additionally, a 1D CNN Autoencoder and a Convolutional Variational Autoencoder are also trained and the results are compared with Isolation Forest and Local Outlier Factor which serve as baseline models. These methods are evaluated on the LEAD 1.0 dataset, consisting of hourly electricity readings from 200 commercial buildings. The results demonstrate that deep learning methods perform better compared to traditional unsupervised machine learning methods in identifying sequential anomalies. DCGAN trained with conventional loss function achieved the highest F1 score of 0.697 when compared to the rest of the methods.
 
 ## LEAD Dataset
 
@@ -25,6 +28,8 @@ Here's a small example of the dataset:
 
 
 ## Repository Structure
+
+Extract dataset ('200_buildings.csv') from dataset.zip file and place it in dataset folder. Make sure that following repository structure is maintained. 
 
 ```yaml
 .

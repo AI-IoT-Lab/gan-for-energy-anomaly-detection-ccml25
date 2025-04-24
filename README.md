@@ -58,7 +58,7 @@ Given below is the config file with default values.
 ```yaml
 {
     "data": {
-        "dataset_path": "dataset/15_builds_dataset.csv",
+        "dataset_path": "dataset/200_buildings_dataset.csv",
         "train_path": "model_input/",
         "only_building": 1304
     },
@@ -142,7 +142,7 @@ It includes:
 ```yaml
 {
     "data": {
-        "dataset_path": "dataset/200_builds_dataset.csv",
+        "dataset_path": "dataset/200_buildings_dataset.csv",
         "train_path": "model_input/",
         "only_building": 1304
     },
@@ -177,7 +177,7 @@ It includes:
 ```yaml
 {
     "data": {
-        "dataset_path": "dataset/200_builds_dataset.csv",
+        "dataset_path": "dataset/200_buildings_dataset.csv",
         "train_path": "model_input/",
         "only_building": 1304
     },
@@ -212,7 +212,7 @@ It includes:
 ```yaml
 {
     "data": {
-        "dataset_path": "dataset/200_builds_dataset.csv",
+        "dataset_path": "dataset/200_buildings_dataset.csv",
         "train_path": "model_input/",
         "only_building": 1304
     },

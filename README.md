@@ -29,7 +29,7 @@ Here's a small example of the dataset:
 
 ## Repository Structure
 
-Extract dataset ('200_buildings.csv') from dataset.zip file and place it in dataset folder. Make sure that following repository structure is maintained. 
+Extract dataset ('200_buildings_dataset.csv') from dataset.zip file and place it in dataset folder. Make sure that following repository structure is maintained. 
 
 ```yaml
 .

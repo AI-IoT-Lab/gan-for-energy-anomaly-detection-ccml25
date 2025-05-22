@@ -261,3 +261,7 @@ b. cd experimental/
 c. Run `run.py`
 
 d. Run `anom_detect.py`
+
+## Acknowledgment
+
+We would like to thank the providers of the LEAD 1.0 dataset for making the data available for  research. We also acknowledge the contributions made by Hardik Prabhu towards this project.  Special thanks to our colleagues at the Robert Bosch Centre for Cyber-Physical Systems for their  guidance and feedback throughout this work.
